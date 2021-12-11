@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     var currentVal = StockUtil.STATIC_START_VAL
     val semaphore = Semaphore(1)
     var loggedIn = false
-    var enabled = true
+    var enabled = false
     val executor = Executors.newScheduledThreadPool(4)
     var currentIndex = 0
     val maxIndex = 5
